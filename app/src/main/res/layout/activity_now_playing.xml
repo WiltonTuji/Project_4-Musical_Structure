@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_now_playing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.project4_wiltontuji.NowPlayingActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/album_icon" />
+
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esta é a Activity onde o usuário pode ver a capa do álbum e as tags do seu arquivo de música em destaque."/>
+
+
+    <RelativeLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/play_button" />
+
+        <ImageView
+            android:id="@+id/pause_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/play_button"
+            android:src="@drawable/pause_button" />
+
+        <ImageView
+            android:id="@+id/stop_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@id/play_button"
+            android:src="@drawable/stop_button" />
+
+        <ImageView
+            android:id="@+id/next_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/pause_button"
+            android:src="@drawable/next_button" />
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@id/stop_button"
+            android:src="@drawable/back_button" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/now_playing"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_above="@id/buttons"
+        android:background="@android:color/darker_gray">
+
+
+        <TextView
+            android:id="@+id/album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Album Name"
+            style="@style/now_playing"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/album_name"
+            android:layout_centerHorizontal="true"
+            android:text="Artist Name"
+            style="@style/now_playing"/>
+
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/artist_name"
+            android:layout_centerHorizontal="true"
+            android:text="Music Name"
+            style="@style/now_playing" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

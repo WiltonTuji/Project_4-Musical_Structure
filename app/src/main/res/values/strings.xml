@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project 4 - Wilton Tuji</string>
+    <string name="musics">Músicas</string>
+    <string name="artist">Artistas</string>
+    <string name="album">Álbuns</string>
+    <string name="now_playing_det">Tocando agora (Clique para mais detalhes)</string>
+    <string name="now_playing">Tocando agora</string>
+</resources>
